@@ -12,7 +12,7 @@ const cartSlice = createSlice({
       state.cart.push(action.payload);
     },
     deleteItem(state, action) {
-      state.cart = state.card.filter((item) => item.pizzaId !== action.payload);
+      state.cart = state.cart.filter((item) => item.pizzaId !== action.payload);
     },
     increaseCartQuantity(state, action) {
       const item = state.cart.find((item) => item.pizzaId === action.payload);
@@ -41,6 +41,10 @@ export const {
 } = cartSlice.actions;
 
 export default cartSlice.reducer;
+
+export const getCart = (state) => {
+  return state.cart.cart;
+};
 
 export const getTotalPrice = (state) =>
   state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);

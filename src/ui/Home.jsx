@@ -17,7 +17,9 @@ function Home() {
       {username === "" ? (
         <CreateUser />
       ) : (
-        <Button type={"primary"}>Continue ordering</Button>
+        <Button path={"/menu"} type={"primary"}>
+          Continue ordering
+        </Button>
       )}
     </div>
   );
