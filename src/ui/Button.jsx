@@ -10,6 +10,8 @@ const Button = ({ children, disabled, path, type, onClick }) => {
     secondary:
       base +
       " px-4 py-3 text-sm md:px-6 md:py-4 bg-stone-200 border-2 hover:bg-stone-300 focus:ring-stone-300 focus:bg-stone-300 hover:text-stone-800 text-stone-400",
+
+    round: base + "px-2.5 py-1 md:px-3.5 md:py-2 text-sm",
   };
 
   if (path)
