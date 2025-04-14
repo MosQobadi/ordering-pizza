@@ -3,7 +3,7 @@ import Button from "../../ui/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, getCurrentQuantityById } from "../Cart/cartSlice";
 import DeleteItem from "../Cart/DeleteItem";
-import UpdateitemQuantity from "../Cart/UpdateitemQuantity";
+import UpdateItemQuantity from "../Cart/UpdateItemQuantity";
 
 function MenuItem({ pizza }) {
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ function MenuItem({ pizza }) {
           )}
           {isInCart > 0 && (
             <div className="flex items-center gap-5">
-              <UpdateitemQuantity pizzaId={id} />
+              <UpdateItemQuantity pizzaId={id} />
               <DeleteItem pizzaId={id} />
             </div>
           )}

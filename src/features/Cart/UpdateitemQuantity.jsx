@@ -6,7 +6,7 @@ import {
   increaseCartQuantity,
 } from "./cartSlice";
 
-const UpdateitemQuantity = ({ pizzaId }) => {
+const UpdateItemQuantity = ({ pizzaId }) => {
   const currentQuantity = useSelector(getCurrentQuantityById(pizzaId));
   const dispatch = useDispatch();
 
@@ -29,4 +29,4 @@ const UpdateitemQuantity = ({ pizzaId }) => {
   );
 };
 
-export default UpdateitemQuantity;
+export default UpdateItemQuantity;
